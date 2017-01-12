@@ -1,0 +1,11 @@
+[package]
+name = "yggdrasil-agent"
+version = "0.1.0"
+authors = ["Dreae <dreae@dreae.onl>"]
+
+[dependencies]
+rocket = "0.1.4"
+rocket_codegen = "0.1.4"
+rocket_contrib = "0.1.4"
+serde = "0.8.21"
+serde_derive = "0.8.21"
