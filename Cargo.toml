@@ -9,3 +9,11 @@ rocket_codegen = "0.1.4"
 rocket_contrib = "0.1.4"
 serde = "0.8.21"
 serde_derive = "0.8.21"
+yggdrasil_shared = { git = "https://github.com/Dreae/yggdrasil-shared" }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.19"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
