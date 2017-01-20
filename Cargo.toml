@@ -7,8 +7,11 @@ authors = ["Dreae <dreae@dreae.onl>"]
 rocket = "0.1.4"
 rocket_codegen = "0.1.4"
 rocket_contrib = "0.1.4"
+lazy_static = "0.2.2"
 serde = "0.8.21"
 serde_derive = "0.8.21"
+serde_json = "0.8.4"
+dotenv = "0.8.0"
 yggdrasil_shared = { git = "https://github.com/Dreae/yggdrasil-shared" }
 
 [target.'cfg(unix)'.dependencies]

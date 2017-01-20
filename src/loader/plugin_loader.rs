@@ -15,7 +15,7 @@ pub fn load_plugin(name: &str) {
       panic!("Failed to load plugin {}", name);
     }
 
-    let loader = dlsym(module, cstring!(name).as_ptr());
+    let loader = dlsym(module, cstring!("load_plugin").as_ptr());
     if loader.is_null() {
       panic!("{} is not a valid plugin, no load function found", name)
     }
@@ -33,7 +33,7 @@ pub fn load_plugin(name: &str) {
       panic!("Failed to load plugin {}", name);
     }
 
-    let loader = GetProcAddress(module, cstring!("plugin_load").as_ptr());
+    let loader = GetProcAddress(module, cstring!("load_plugin").as_ptr());
     if loader.is_null() {
       panic!("{} is not a valid plugin, no load function found", name);
     }
